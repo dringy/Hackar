@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{17D7B53E-9192-805E-B542-D3105CD95070}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_6_2;UNITY_4_6;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_IL2CPP;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_4_6_FEATURES;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;UNITY5_SCRIPTING_IN_UNITY4;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_MONO;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\BlackColour.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Button.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Enviroment.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Goal.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Key.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Mobiles\MobileEnviroment.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Mobiles\NPC.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Mobiles\Pacer.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Mobiles\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\OpenableObjects\Door.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\OpenableObjects\TrapDoor.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\StableBlocker.cs" />
+     <Compile Include="Assets\Scripts\GoalReplica.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\HackableButton.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\HackableColour.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\HackableKey.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\HackableObject.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\HackableWall.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\Openable Objects\HackableDoor.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\Openable Objects\HackableOpenableObject.cs" />
+     <Compile Include="Assets\Scripts\HackableObject\Openable Objects\HackableTrapDoor.cs" />
+     <Compile Include="Assets\Scripts\HackableProperty\HackableBool.cs" />
+     <Compile Include="Assets\Scripts\HackableProperty\HackableEnum.cs" />
+     <Compile Include="Assets\Scripts\HackableProperty\HackableNumber.cs" />
+     <Compile Include="Assets\Scripts\HackableProperty\HackableProperty.cs" />
+     <Compile Include="Assets\Scripts\HackableProperty\HackableString.cs" />
+     <Compile Include="Assets\Scripts\Level Controllers\EnviromentMap.cs" />
+     <Compile Include="Assets\Scripts\Level Controllers\LevelGUI.cs" />
+     <Compile Include="Assets\Scripts\Level Controllers\LevelStats.cs" />
+     <Compile Include="Assets\Scripts\Level Controllers\TurnBasedController.cs" />
+     <Compile Include="Assets\Scripts\LevelSelection.cs" />
+     <Compile Include="Assets\Scripts\MainMenuGUI.cs" />
+     <Compile Include="Assets\Scripts\Triggers\Level3\Level4_Door.cs" />
+     <Compile Include="Assets\Scripts\Triggers\Level3\trapDoorTrigger.cs" />
+     <Compile Include="Assets\Scripts\Triggers\TwoStateTrigger.cs" />
+     <Compile Include="Assets\Scripts\TurnBasedElements\TurnBasedButton.cs" />
+     <Compile Include="Assets\Scripts\TurnBasedElements\TurnBasedElement.cs" />
+     <Compile Include="Assets\Scripts\TurnBasedElements\TurnBasedNPC.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.2/UnityEngine.UI.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
