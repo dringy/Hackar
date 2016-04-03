@@ -6,6 +6,6 @@ using System.Collections;
 public class BlackColour : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
-		renderer.material.color = Color.black;
+		GetComponent<Renderer>().material.color = Color.black;
 	}
 }

@@ -65,13 +65,13 @@ public abstract class HackableColour : HackableObject {
 			break;
 		}
 		}
-		if(renderer != null)
+		if(GetComponent<Renderer>() != null)
 		{
-			renderer.material.color = colour;
+			GetComponent<Renderer>().material.color = colour;
 		}
 		foreach(Transform child in transform)
 		{
-			child.renderer.material.color = colour;
+			child.GetComponent<Renderer>().material.color = colour;
 		}
 	}
 }

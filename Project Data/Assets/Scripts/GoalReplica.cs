@@ -8,7 +8,7 @@ public class GoalReplica : MonoBehaviour {
 	{
 		//Adjusts the scale and colour to make it look cool
 		transform.localScale = new Vector3 (0.75f, 0.75f, 0.75f);
-		gameObject.renderer.material.color = Color.yellow;
+		gameObject.GetComponent<Renderer>().material.color = Color.yellow;
 	}
 	
 	//Calls every frame
